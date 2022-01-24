@@ -35,11 +35,12 @@ app.get('/producto/lista', function (req, res) {
 });
 
 app.get('/producto/detalle/:id', function (req, res) {
+  const id = parseInt(req.params.id);
   const producto = PRODUCTS.find((p) => {
-    return p.id === req.params.id;
+    return p.id === id;
   });
   if (typeof producto === 'undefined') {
-    return res.status(404).send()
+    return res.status(404).send(producto)
   }
   res.send(producto);
 });
