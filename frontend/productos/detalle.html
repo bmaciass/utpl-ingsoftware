@@ -10,19 +10,22 @@
 </head>
 
 <body>
+  <nav class="navbar navbar-dark bg-primary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="../home/index.html">Inicio</a>
+    </div>
+  </nav>
   <div class="container">
-    <div class="row">
-      <button type="button" class="btn btn-primary" id="btn_todos_productos">Todos los productos</button>
+    <button class="btn btn-info" id="btn_back">Regresar</button>
+    <h2 id="txt_titulo"></h2>
+    <div class="text-center">
+      <img id="img_producto" class="rounded" width="400px" height="400px">
     </div>
-    <div class="row">
-      <button type="button" class="btn btn-primary" id="btn_mas_sanos">Productos más saludables</button>
-    </div>
-    <div class="row">
-      <button type="button" class="btn btn-primary" id="btn_mas_consumidos">Productos más consumidos</button>
-    </div>
+    <br />
+    <table id="tbl_detalle" class="table table-striped"></table>
   </div>
   <script src="../assets/js/bootstrap.bundle.min.js"></script>
-  <script src="./index.js"></script>
+  <script src="./detalle.js"></script>
 </body>
 
 </html>

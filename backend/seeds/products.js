@@ -24,10 +24,10 @@ const PRODUCTS = [
   { id: 23, nombre: 'verde', imagen: 'verde.jpg', cantidad: 1, caloriasTotales: 50, detalle: { organico: true, peso: 200, porciones: 1, caloriasPorcion: 50 } },
   { id: 24, nombre: 'galletas chips ahoy', imagen: 'chips-ahoy.jpg', cantidad: 1, caloriasTotales: 100, detalle: { organico: true, peso: 200, porciones: 1, caloriasPorcion: 50 } },
   { id: 25, nombre: 'chuletas ahumadas', imagen: 'chuleta.jpg', cantidad: 1, caloriasTotales: 350, detalle: { organico: true, peso: 200, porciones: 1, caloriasPorcion: 50 } },
-  { id: 26, nombre: 'queso cheddar pq', imagen: 'cheddar.jpg', cantidad: 1, caloriasTotales: 125, detalle: { organico: true, peso: 200, porciones: 1, caloriasPorcion: 50 } },
+  { id: 26, nombre: 'queso cheddar pq', imagen: 'queso-cheddar.jpg', cantidad: 1, caloriasTotales: 125, detalle: { organico: true, peso: 200, porciones: 1, caloriasPorcion: 50 } },
   { id: 27, nombre: 'jugo manzana pq', imagen: 'jugo-manzana.jpg', cantidad: 1, caloriasTotales: 500, detalle: { organico: true, peso: 200, porciones: 1, caloriasPorcion: 50 } },
   { id: 29, nombre: 'salsa de tomate', imagen: 'salsa-tomate.jpg', cantidad: 1, caloriasTotales: 380, detalle: { organico: true, peso: 200, porciones: 1, caloriasPorcion: 50 } },
-  { id: 30, nombre: 'mayonesa', imagen: 'mayonesa.jpg', cantidad: 1, caloriasTotales: 400, detalle: { organico: true, peso: 200, porciones: 1, caloriasPorcion: 50 } },
+  { id: 30, nombre: 'mayonesa', imagen: 'mayonesa.jpg', cantidad: 1, caloriasTotales: 400, detalle: { organico: true, peso: 200, porciones: 1, caloriasPorcion: 50 } }
 ];
 
 module.exports = {
