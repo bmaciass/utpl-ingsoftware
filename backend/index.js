@@ -6,7 +6,7 @@ const { USERS } = require('./seeds/users')
 const { PRODUCTS } = require('./seeds/products')
 
 function mapearLista (v) {
-  return { id: v.id, nombre: v.nombre };
+  return { id: v.id, nombre: v.nombre, imagen: v.imagen };
 }
 
 const topMalos = PRODUCTS.sort((a, b) => { return (a.caloriasTotales - b.caloriasTotales) }).slice(0, 10).map(mapearLista);
@@ -42,7 +42,7 @@ app.get('/producto/detalle/:id', function (req, res) {
     return p.id === id;
   });
   if (typeof producto === 'undefined') {
-    return res.status(404).send(producto)
+    return res.status(404).send()
   }
   res.send(producto);
 });
