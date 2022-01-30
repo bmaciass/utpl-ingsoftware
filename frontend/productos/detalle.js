@@ -23,12 +23,12 @@ async function consultarDetalleProducto (id) {
 function construirDetalleProducto (d) {
   let html = '<tbody>';
   const img = document.getElementById('img_producto');
+  const titulo = document.getElementById('txt_titulo');
+  titulo.innerText = d.data.nombre;
   img.src = '../assets/images/' + d.data.imagen;
-  html += '<tr><td>Nombre</td><td>' + d.data.nombre + '</td></tr>';
   html += '<tr><td>Calorías totales</td><td>' + d.data.caloriasTotales + '</td></tr>';
   html += '<tr><td>Peso</td><td>' + d.data.detalle.peso + '</td></tr>';
   html += '</tbody>';
-  console.log(JSON.stringify(d));
   return html;
 }
 
