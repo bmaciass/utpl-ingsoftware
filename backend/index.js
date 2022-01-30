@@ -1,6 +1,7 @@
 'use strict'
 
 const express = require('express')
+const cors = require('cors')
 const { USERS } = require('./seeds/users')
 const { PRODUCTS } = require('./seeds/products')
 
