@@ -41,7 +41,7 @@ async function consultarProductos (url) {
 function construirListaProductos (data) {
   let html = '';
   for (const d of data) {
-    html += `<div class="card" style="width: 18rem;"><img src="../assets/images/${d.asset}" class="card-img-top" alt="..."><div class="card-body"><h5 class="card-title">${d.nombre}</h5><a href="#" class="btn btn-primary">Ver detalle</a></div></div>`
+    html += `<div class="card" style="width: 18rem;"><img src="../assets/images/${d.imagen}" class="card-img-top" alt="..."><div class="card-body"><h5 class="card-title">${d.nombre}</h5><a href="#" class="btn btn-primary">Ver detalle</a></div></div>`
   }
   return html;
 }
