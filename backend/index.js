@@ -9,8 +9,8 @@ function mapearLista (v) {
   return { id: v.id, nombre: v.nombre, imagen: v.imagen };
 }
 
-const topMalos = PRODUCTS.sort((a, b) => { return (a.caloriasTotales - b.caloriasTotales) }).slice(0, 10).map(mapearLista);
-const topBuenos = PRODUCTS.sort((a, b) => { return (b.caloriasTotales - a.caloriasTotales) }).slice(0, 10).map(mapearLista);
+const topBuenos = PRODUCTS.sort((a, b) => { return (a.caloriasTotales - b.caloriasTotales) }).slice(0, 10).map(mapearLista);
+const topMalos = PRODUCTS.sort((a, b) => { return (b.caloriasTotales - a.caloriasTotales) }).slice(0, 10).map(mapearLista);
 
 const app = express()
 app.use(cors())
