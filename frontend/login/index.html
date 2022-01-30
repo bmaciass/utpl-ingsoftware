@@ -1,17 +1,29 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <title>Inicio de sesión</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+  <title>Login</title>
 </head>
 
 <body>
-  <form>
-    <label>Usuario</label>
-    <input type="text" id="txt_usuario" />
-    <label>Clave</label>
-    <input type="password" id="txt_clave" />
-  </form>
+  <div class="container">
+    <form>
+      <div class="mb-3">
+        <label for="txt_usuario" class="form-label">Usuario</label>
+        <input type="email" class="form-control" id="txt_usuario">
+      </div>
+      <div class="mb-3">
+        <label for="txt_clave" class="form-label">Clave</label>
+        <input type="password" class="form-control" id="txt_clave">
+      </div>
+      <button type="submit" class="btn btn-primary" id="btn_iniciar_sesion">Iniciar sesión</button>
+    </form>
+  </div>
+  <script src="../assets/js/bootstrap.bundle.min.js"></script>
   <script src="./index.js"></script>
 </body>
 
