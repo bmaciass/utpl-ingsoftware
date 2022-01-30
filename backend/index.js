@@ -12,6 +12,7 @@ const topMalos = PRODUCTS.sort((a, b) => { return (a.caloriasTotales - b.caloria
 const topBuenos = PRODUCTS.sort((a, b) => { return (b.caloriasTotales - a.caloriasTotales) }).slice(0, 10).map(mapearLista);
 
 const app = express()
+app.use(cors())
 app.use(express.json())
 
 app.get('/health', function (req, res) {
